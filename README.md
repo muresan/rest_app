@@ -25,11 +25,11 @@ Copy your variables here from the [Top README](../README.md).
 For our purposes, MVP is sufficient. Don't get bogged down implementing authentication, sharding or "future-proof" features.  __Build it FAST!__
 
 - [x] 1. Create a webapp framework in this directory `2`
-- [ ] 2. Define the functionality of your api by creating curl-based tests `3`
+- [x] 2. Define the functionality of your api by creating curl-based tests `3`
 - [ ] 3. Review the tests with your onboarder `3`
 - [x] 4. Add routes/views/handlers/whathaveyou to replicate your webapp `3`
-- [ ] 5. Hook them up to your data source of choice `3`
-- [ ] 6. Iterate until the tests all pass `8`
+- [x] 5. Hook them up to your data source of choice `3`
+- [x] 6. Iterate until the tests all pass `8`
 - [ ] 7. Review the final product with your onboarder `3`
 
 ### Thoughts for review
