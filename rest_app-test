@@ -1,0 +1,52 @@
+
+
+URL="http://rest_app.example.com/"
+METHOD="-X GET"
+COMMAND="curl $METHOD $URL"
+
+echo "Command '"$COMMAND"'"
+echo "Expected output: "'{"1":"article 1","2":"article 2","3":"article 3"}'
+eval $COMMAND
+
+#############################################################
+URL="http://rest_app.example.com/1"
+COMMAND="curl $METHOD $URL"
+
+echo
+echo "Command '"$COMMAND"'"
+echo "Expected output: "'{"1":"article 1"}'
+eval $COMMAND
+
+#############################################################
+METHOD="-X PUT"
+URL="http://rest_app.example.com/4/test"
+COMMAND="curl $METHOD $URL"
+
+echo
+echo "Command '"$COMMAND"'"
+echo "Expected output: "
+echo 'PUT with id 4->test {"1":"article 1","2":"article 2","3":"article 3","4":"test"}'
+eval $COMMAND
+
+#############################################################
+METHOD="-X PATCH"
+URL="http://rest_app.example.com/1/test"
+COMMAND="curl $METHOD $URL"
+
+echo
+echo "Command '"$COMMAND"'"
+echo "Expected output: "
+echo 'PATCH with id 1->test {"1":"test","2":"article 2","3":"article 3"}'
+eval $COMMAND
+
+#############################################################
+METHOD="-X DELETE"
+URL="http://rest_app.example.com/1"
+COMMAND="curl $METHOD $URL"
+
+echo
+echo "Command '"$COMMAND"'"
+echo "Expected output: "
+echo '{"2":"article 2","3":"article 3"}'
+eval $COMMAND
+
